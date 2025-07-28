@@ -1,10 +1,43 @@
-Category: Cryptography
-Challenge: cryptography(rot_13)
-Thought process: The challenge name and prompt both reference ROT13, which is a basic Caesar cipher where each letter is shifted 13 positions forward in the alphabet. Because the alphabet has 26 letters, applying ROT13 twice brings you back to the original message.
-This cipher only affects letters (A–Z and a–z), and leaves punctuation or symbols untouched.
-Tools and techniques: using python.
-      import codecs
-      print(codecs.decode("cvpbPGS{abg_gbb_onq_bs_n_ceboyrz}", "rot_13"))
-Final flag: 
+## Challenge: ROT13  
+**Category:** Cryptography  
+
+
+### Thought Process
+
+The name "ROT13" tells us what kind of cipher it is. ROT13 is a symmetric cipher where each letter is replaced with the letter 13 positions forward in the alphabet. It works only on letters (A–Z, a–z), and non-letter characters (like `{}`, `_`) are left unchanged.
+
+---
+
+### Tools & Techniques Used
+
+- **ROT13 Decoder** (online or code)
+- Optional Python code:
+```python
+import codecs
+cipher = "cvpbPGS{abg_gbb_onq_bs_n_ceboyrz}"
+print(codecs.decode(cipher, "rot_13"))
+```
+
+---
+
+### Solution Steps
+
+1. Input the ciphertext into a ROT13 decoder:
+   ```
+   cvpbPGS{abg_gbb_onq_bs_n_ceboyrz}
+   ```
+
+2. After decoding with ROT13, we get:
+   ```
+   picoCTF{not_too_bad_of_a_problem}
+   ```
+
+---
+
+### Final Flag
+
+```
 picoCTF{not_too_bad_of_a_problem}
+```
+
 
