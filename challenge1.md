@@ -1,6 +1,6 @@
 # Challenge Name: ROT13 Challenge
 
-**Category:** Cryptography   
+## **Category:** Cryptography   
 ## My Thought Process:
 
 Since the challenge specifically mentions ROT13, I immediately recognized that it was using the **ROT13 cipher**. This is commonly used in beginner CTFs to introduce basic cryptography.
