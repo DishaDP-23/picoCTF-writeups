@@ -1,4 +1,4 @@
-# Challenge Name: Cryptography can be easy, do you know what ROT13 is?
+# Challenge Name: ROT13 Challenge
 
 **Category:** Cryptography   
 ## My Thought Process:
